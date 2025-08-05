@@ -1,0 +1,592 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EnlivenMind AI | Team</title>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f2f2f2;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .team-card {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(16px);
+      border-radius: 16px;
+      padding: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(0, 255, 255, 0.2);
+    }
+
+    .team-card h3 {
+      font-size: 1.4rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    .team-card p {
+      font-size: 0.95rem;
+      color: #c9d6e3;
+      margin-bottom: 0.6rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .team-card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 data-aos="fade-down">OUR TEAM</h1>
+  </header>
+
+  <section class="team-grid">
+    <div class="team-card" data-aos="fade-up">
+      <h3>Ayush Singh</h3>
+      <p>AI-Based Neuro-Adaptive Cognitive Therapy</p>
+      <p>Digital Emotional Twin using NLP, Sentiment Analysis, and Memory Graphs</p>
+      <p>End to End Website Design</p>
+
+    </div>
+
+    <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Kratika Jadon</h3>
+      <p>Personalized Mental Health Plan Generator (ML + NLP)</p>
+      <p>Digital Health Recommendations and AI Therapy Personalization</p>
+    </div>
+
+    <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Sneha Gupta</h3>
+      <p>AI-Based Stress Management Chatbot</p>
+      <p>Peer Support Matching Platform (Recommendation System + NLP)</p>
+      <p>Emotion-Based AI Therapy and Mental Health Chatbot</p>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnlivenMind AI | Team</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    :root {
+      --primary: #7f5af0;
+      --secondary: #2cb67d;
+      --dark: #16161a;
+      --light: #fffffe;
+      --highlight: #e53170;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background-color: var(--dark);
+      color: var(--light);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Cosmic Background */
+    .cosmic-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+      overflow: hidden;
+    }
+
+    /* Animated Stars */
+    @keyframes twinkle {
+
+      0%,
+      100% {
+        opacity: 0.2;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    .stars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle var(--duration) infinite ease-in-out;
+      animation-delay: var(--delay);
+    }
+
+    /* Nebula Effect */
+    .nebula {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.15;
+    }
+
+    .nebula-1 {
+      width: 500px;
+      height: 500px;
+      background: var(--primary);
+      top: -100px;
+      left: -100px;
+      animation: float 25s infinite linear;
+    }
+
+    .nebula-2 {
+      width: 800px;
+      height: 800px;
+      background: var(--secondary);
+      bottom: -200px;
+      right: -200px;
+      animation: float 30s infinite linear reverse;
+    }
+
+    .nebula-3 {
+      width: 300px;
+      height: 300px;
+      background: var(--highlight);
+      top: 30%;
+      right: 20%;
+      animation: float 20s infinite linear;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      25% {
+        transform: translate(50px, 50px) rotate(5deg);
+      }
+
+      50% {
+        transform: translate(0, 100px) rotate(0deg);
+      }
+
+      75% {
+        transform: translate(-50px, 50px) rotate(-5deg);
+      }
+
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+    }
+
+    header {
+      text-align: center;
+      padding: 6rem 1rem 3rem;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      background: linear-gradient(to right, var(--light), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px rgba(44, 182, 125, 0.5);
+      }
+
+      to {
+        text-shadow: 0 0 20px rgba(44, 182, 125, 0.8),
+          0 0 30px rgba(44, 182, 125, 0.3);
+      }
+    }
+
+    header p {
+      color: #94a3b8;
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+      padding: 3rem 2rem 6rem;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .team-card {
+      background: rgba(30, 30, 46, 0.5);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 2.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      animation: cardEntrance 1s ease-out;
+      animation-fill-mode: backwards;
+    }
+
+    @keyframes cardEntrance {
+      from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .team-card:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+
+    .team-card:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+
+    .team-card:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    .team-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg,
+          rgba(127, 90, 240, 0.1) 0%,
+          rgba(44, 182, 125, 0.1) 100%);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 40px rgba(44, 182, 125, 0.25);
+      border-color: rgba(44, 182, 125, 0.3);
+    }
+
+    .team-card:hover::before {
+      opacity: 1;
+    }
+
+    .team-card h3 {
+      font-size: 1.6rem;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .team-card h3::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: var(--secondary);
+      border-radius: 3px;
+      transition: width 0.3s ease;
+    }
+
+    .team-card:hover h3::after {
+      width: 100%;
+    }
+
+    .team-card p {
+      font-size: 1rem;
+      color: #cbd5e1;
+      margin-bottom: 1rem;
+      line-height: 1.7;
+      position: relative;
+      padding-left: 1.5rem;
+      transform: translateX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .team-card:hover p {
+      transform: translateX(5px);
+    }
+
+    .team-card p::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: var(--secondary);
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem 1.5rem 4rem;
+      }
+
+      .team-card {
+        padding: 2rem;
+      }
+    }
+
+    /* Floating circles animation */
+    .floating-circles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.1;
+      animation: floatCircle linear infinite;
+    }
+
+    @keyframes floatCircle {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cosmic Background with Stars -->
+  <div class="cosmic-bg">
+    <div class="stars" id="stars"></div>
+    <div class="nebula nebula-1"></div>
+    <div class="nebula nebula-2"></div>
+    <div class="nebula nebula-3"></div>
+    <div class="floating-circles" id="circles"></div>
+  </div>
+
+  <header>
+    <h1 class="animate__animated animate__fadeInDown">OUR TEAM</h1>
+    <p>The minds behind EnlivenMind AI, combining expertise in artificial intelligence, psychology, and user
+      experience to revolutionize mental health care.</p>
+  </header>
+
+  <section class="team-grid">
+    <!-- Ayush Singh -->
+    <div class="team-card">
+      <h3>Ayush Singh</h3>
+      <p>AI-Based Neuro-Adaptive Cognitive Therapy</p>
+      <p>Digital Emotional Twin using NLP, Sentiment Analysis, and Memory Graphs</p>
+      <p>End to End Website Design</p>
+    </div>
+
+    <!-- Kratika Jadon -->
+    <div class="team-card">
+      <h3>Kratika Jadon</h3>
+      <p>Personalized Mental Health Plan Generator (ML + NLP)</p>
+      <p>Digital Health Recommendations and AI Therapy Personalization</p>
+      <p>What-If Emotional Simulator</p>
+
+    </div>
+
+    <!-- Sneha Gupta -->
+    <div class="team-card">
+      <h3>Sneha Gupta</h3>
+      <p>AI-Based Stress Management Chatbot</p>
+      <p>Peer Support Matching Platform (Recommendation System + NLP)</p>
+      <p>Emotion-Based AI Therapy and Mental Health Chatbot</p>
+    </div>
+  </section>
+  <div class="guidance-section" style="
+    text-align: center;
+    padding: 2rem;
+    background: rgba(30, 30, 46, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 2rem auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out;
+">
+    <h3 style="
+        color: var(--accent);
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    ">Project Guidance</h3>
+    <p style="color: #cbd5e1; line-height: 1.6;">
+      This project is completed under the guidance of <strong>Dr. Vikrant Chole</strong>,
+      Associate Professor at Amity University, Gwalior.
+    </p>
+  </div>
+
+  <style>
+    /* Generate stars dynamically with CSS */
+    .stars::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        /* Large stars */
+        radial-gradient(1px 1px at 10% 20%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 20% 30%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 30% 40%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 40% 50%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 50% 60%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 60% 70%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 70% 80%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 80% 90%, white, rgba(0, 0, 0, 0)),
+        /* Medium stars */
+        radial-gradient(0.8px 0.8px at 15% 25%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.8px 0.8px at 25% 35%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.8px 0.8px at 35% 45%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.8px 0.8px at 45% 55%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.8px 0.8px at 55% 65%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.8px 0.8px at 65% 75%, white, rgba(0, 0, 0, 0)),
+        /* Small stars */
+        radial-gradient(0.5px 0.5px at 5% 15%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.5px 0.5px at 25% 5%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.5px 0.5px at 45% 25%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.5px 0.5px at 65% 45%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.5px 0.5px at 85% 65%, white, rgba(0, 0, 0, 0));
+      background-repeat: repeat;
+      animation: twinkle 5s infinite ease-in-out;
+    }
+
+    /* Generate floating circles with CSS */
+    .floating-circles::before {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(127, 90, 240, 0.05);
+      top: 20%;
+      left: 10%;
+      animation: floatCircle 25s linear infinite;
+    }
+
+    .floating-circles::after {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: rgba(44, 182, 125, 0.05);
+      top: 60%;
+      left: 70%;
+      animation: floatCircle 30s linear infinite reverse;
+    }
+  </style>
+</body>
+
+</html>

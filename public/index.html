@@ -1,0 +1,1049 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnlivenMind AI Hub</title>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .logo-img {
+      height: 60px;
+    }
+
+    .nav-button {
+      background: linear-gradient(135deg, #1e90ff, #00f2fe);
+      color: white;
+      padding: 10px 20px;
+      margin: 0 0.3rem;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0, 242, 255, 0.4);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 1.5rem;
+      width: 300px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 255, 255, 0.3);
+    }
+
+    .btn {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 10px 20px;
+      font-weight: bold;
+      background: #00c6ff;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #007bb5;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+      <img src="logo.png.png" alt="EnlivenMind AI" class="logo-img" />
+    </a>
+    <div>
+      <a href="#modules"><button class="nav-button">Modules</button></a>
+      <a href="#projects"><button class="nav-button">Projects</button></a>
+      <a href="team.html" target="_blank"><button class="nav-button">Team</button></a>
+      <a href="#contact"><button class="nav-button">Contact</button></a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 data-aos="zoom-in">Welcome to EnlivenMind AI Hub</h1>
+    <p data-aos="fade-up">Empowering mental health with intelligent solutions.</p>
+  </section>
+
+  <section id="modules" data-aos="fade-up">
+    <h2 class="section-title">OUR MODULES</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Stress & Anxiety Chatbot</h3>
+        <p>Interactive therapy & breathing assistance using AI. Detects user’s sentiment and responds with breathing
+          guidance, CBT responses, or
+          motivation. </p>
+      </div>
+      <div class="card">
+        <h3>Peer Support System</h3>
+        <p>Find matching peers using NLP + emotional recommendation. Enables AI-facilitated group formation and safe
+          emotional exchanges. </p>
+      </div>
+
+
+      <div class="card" data-aos="zoom-in">
+        <h3>Personal Mental Health Plan</h3>
+        <p>Uses ML and NLP to build customized mental health routines based on user emotion, habits, and wellness goals.
+        </p>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>What-If Scenario Engine</h3>
+        <p>Simulates emotional or behavioral outcomes for hypothetical decisions using AI prediction and reinforcement
+          logic.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2 class="section-title">OUR PROJECTS</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Neuro Adaptation Therapy</h3>
+        <p>AI-based adaptive therapy for cognitive alignment. It strengthen positive emotional regulation</p>
+        <a href="https://colab.research.google.com/github/AyushSingh0001/Neuro-Adaption-Project/blob/main/Neuro_Adaption.ipynb"
+          target="_blank" class="btn">Open Notebook</a>
+      </div>
+
+      <div class="card">
+        <h3>Emotional Twin AI</h3>
+        <p>Simulates human emotion using NLP, sentiment analysis, and memory graphs.</p>
+        <a href="https://colab.research.google.com/github/AyushSingh0001/Emotional_Twin/blob/main/emotional_twin.ipynb"
+          target="_blank" class="btn">Open Notebook</a>
+      </div>
+      <div class="card">
+        <h3>Mental Health Plan Generator</h3>
+        <p>Generates personalized mental health routines using ML + NLP based on user input, behavior, and wellness
+          goals.</p>
+          <a href="https://colab.research.google.com/github/kratika-jadon/MENTAL_HEALTH_PLAN_GENERATOR/blob/main/Mental_Health_Plan_Generator1.ipynb" 
+          target="_blank" class="btn">Open Notebook</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2 class="section-title">CONTACT US</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Your Phone Number" required pattern="[0-9]{10}" />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EnlivenMind AI. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    const form = document.querySelector('.contact-form');
+    const sendBtn = form.querySelector('button');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      sendBtn.disabled = true;
+      sendBtn.textContent = "Sending...";
+
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData);
+
+      try {
+        const response = await fetch('/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+          showToast("✅ Message sent successfully!");
+          form.reset();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          showToast("❌ Failed to send message.");
+        }
+      } catch (err) {
+        showToast("⚠️ Error occurred. Try again later.");
+      }
+
+      sendBtn.disabled = false;
+      sendBtn.textContent = "Send";
+    });
+
+
+    function showToast(msg) {
+      const toast = document.createElement("div");
+      toast.textContent = msg;
+      toast.style.position = "fixed";
+      toast.style.bottom = "30px";
+      toast.style.left = "50%";
+      toast.style.transform = "translateX(-50%)";
+      toast.style.background = "#00c6ff";
+      toast.style.color = "#fff";
+      toast.style.padding = "12px 24px";
+      toast.style.borderRadius = "25px";
+      toast.style.boxShadow = "0 5px 20px rgba(0,0,0,0.2)";
+      toast.style.fontWeight = "bold";
+      toast.style.zIndex = 1000;
+      toast.style.transition = "opacity 0.5s ease";
+      document.body.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        setTimeout(() => document.body.removeChild(toast), 500);
+      }, 3000);
+    }
+  </script>
+
+</body>
+
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnlivenMind AI Hub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    :root {
+      --primary: #7f5af0;
+      --secondary: #2cb67d;
+      --accent: #00c6ff;
+      --dark: #16161a;
+      --light: #fffffe;
+      --highlight: #e53170;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: var(--light);
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Cosmic Background Elements */
+    .cosmic-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      overflow: hidden;
+    }
+
+    .cosmic-particle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      filter: blur(1px);
+      animation: floatParticle linear infinite;
+    }
+
+    @keyframes floatParticle {
+      0% {
+        transform: translateY(100vh) translateX(0);
+      }
+
+      100% {
+        transform: translateY(-100vh) translateX(100px);
+      }
+    }
+
+    /* Floating Nebula Effects */
+    .nebula {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.15;
+      z-index: -1;
+    }
+
+    .nebula-1 {
+      width: 500px;
+      height: 500px;
+      background: var(--primary);
+      top: -100px;
+      left: -100px;
+      animation: floatNebula 25s infinite linear;
+    }
+
+    .nebula-2 {
+      width: 800px;
+      height: 800px;
+      background: var(--secondary);
+      bottom: -200px;
+      right: -200px;
+      animation: floatNebula 30s infinite linear reverse;
+    }
+
+    @keyframes floatNebula {
+      0% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      25% {
+        transform: translate(50px, 50px) rotate(5deg);
+      }
+
+      50% {
+        transform: translate(0, 100px) rotate(0deg);
+      }
+
+      75% {
+        transform: translate(-50px, 50px) rotate(-5deg);
+      }
+
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+    }
+
+    header {
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(22, 22, 26, 0.7);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      animation: fadeInDown 0.8s ease-out;
+    }
+
+    .logo-img {
+      height: 60px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-img:hover {
+      transform: scale(1.05) rotate(-5deg);
+    }
+
+    .nav-button {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      padding: 10px 20px;
+      margin: 0 0.3rem;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nav-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: 0.5s;
+    }
+
+    .nav-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 198, 255, 0.4);
+    }
+
+    .nav-button:hover::before {
+      left: 100%;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 10rem 2rem 6rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, rgba(127, 90, 240, 0.1) 0%, transparent 70%);
+      z-index: -1;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(to right, #fff, var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: fadeInDown 1s ease-out, glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+      }
+
+      to {
+        text-shadow: 0 0 20px rgba(0, 198, 255, 0.8);
+      }
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    section {
+      padding: 6rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, rgba(44, 182, 125, 0.05) 0%, transparent 70%);
+      z-index: -1;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: rgba(30, 30, 46, 0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 2rem;
+      width: 320px;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      animation: cardEntrance 1s ease-out;
+      animation-fill-mode: backwards;
+    }
+
+    @keyframes cardEntrance {
+      from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .card:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+
+    .card:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+
+    .card:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    .card:nth-child(4) {
+      animation-delay: 0.8s;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg,
+          rgba(127, 90, 240, 0.1) 0%,
+          rgba(44, 182, 125, 0.1) 100%);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 15px 40px rgba(0, 198, 255, 0.3);
+      border-color: rgba(0, 198, 255, 0.3);
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .card h3::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 3px;
+      transition: width 0.3s ease;
+    }
+
+    .card:hover h3::after {
+      width: 80px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #cbd5e1;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 12px 24px;
+      font-weight: bold;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      border: none;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: 0.5s;
+      z-index: -1;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 198, 255, 0.4);
+    }
+
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      max-width: 500px;
+      margin: 0 auto;
+      background: rgba(30, 30, 46, 0.6);
+      backdrop-filter: blur(10px);
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(22, 22, 26, 0.8);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 1rem;
+      }
+
+      .logo-img {
+        margin-bottom: 1rem;
+      }
+
+      .hero {
+        padding: 8rem 1rem 4rem;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .nav-button {
+        margin: 0.2rem;
+        padding: 8px 16px;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+
+    /* Generate cosmic particles with CSS */
+    .cosmic-bg::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(1px 1px at 10% 20%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 20% 30%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 30% 40%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 40% 50%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 50% 60%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 60% 70%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 70% 80%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 80% 90%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.8px 0.8px at 15% 25%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.8px 0.8px at 25% 35%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.8px 0.8px at 35% 45%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.8px 0.8px at 45% 55%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.8px 0.8px at 55% 65%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.8px 0.8px at 65% 75%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.5px 0.5px at 5% 15%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.5px 0.5px at 25% 5%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.5px 0.5px at 45% 25%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.5px 0.5px at 65% 45%, white, rgba(0, 0, 0, 0)),
+        radial-gradient(0.5px 0.5px at 85% 65%, white, rgba(0, 0, 0, 0));
+      background-repeat: repeat;
+      animation: twinkle 5s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+
+      0%,
+      100% {
+        opacity: 0.2;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cosmic Background -->
+  <div class="cosmic-bg">
+    <div class="nebula nebula-1"></div>
+    <div class="nebula nebula-2"></div>
+  </div>
+
+  <header>
+    <a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+      <img src="logo.png.png" alt="EnlivenMind AI" class="logo-img" />
+    </a>
+    <div>
+      <a href="#modules"><button class="nav-button">Modules</button></a>
+      <a href="#projects"><button class="nav-button">Projects</button></a>
+      <a href="team.html" target="_blank"><button class="nav-button">Team</button></a>
+      <a href="#contact"><button class="nav-button">Contact</button></a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 class="animate__animated animate__fadeInDown">Welcome to EnlivenMind AI Hub</h1>
+    <p class="animate__animated animate__fadeInUp animate__delay-1s">Empowering mental health with intelligent
+      solutions.</p>
+  </section>
+
+  <section id="modules">
+    <h2 class="section-title animate__animated animate__fadeIn">OUR MODULES</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Stress & Anxiety Chatbot</h3>
+        <p>Interactive therapy & breathing assistance using AI. Detects user's sentiment and responds with breathing
+          guidance, CBT responses, or motivation.</p>
+      </div>
+      <div class="card">
+        <h3>Peer Support System</h3>
+        <p>Find matching peers using NLP + emotional recommendation. Enables AI-facilitated group formation and safe
+          emotional exchanges.</p>
+      </div>
+      <div class="card">
+        <h3>Personal Mental Health Plan</h3>
+        <p>Uses ML and NLP to build customized mental health routines based on user emotion, habits, and wellness goals.
+        </p>
+      </div>
+      <div class="card">
+        <h3>What-If Scenario Engine</h3>
+        <p>Simulates emotional or behavioral outcomes for hypothetical decisions using AI prediction and reinforcement
+          logic.</p>
+      </div>
+      <div class="card">
+        <h3>Neuro Adaptation Therapy</h3>
+        <p>AI-based adaptive cognitive therapy that adjusts in real-time to user responses, strengthening positive
+          neural pathways and emotional regulation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title animate__animated animate__fadeIn">OUR PROJECTS</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Neuro Adaptation Therapy</h3>
+        <p>AI-based adaptive therapy for cognitive alignment. It strengthens positive emotional regulation</p>
+        <a href="https://colab.research.google.com/github/AyushSingh0001/Neuro-Adaption-Project/blob/main/Neuro_Adaption.ipynb"
+          target="_blank" class="btn">Open Notebook</a>
+      </div>
+      <div class="card">
+        <h3>Emotional Twin AI</h3>
+        <p>Simulates human emotion using NLP, sentiment analysis, and memory graphs.</p>
+        <a href="https://colab.research.google.com/github/AyushSingh0001/Emotional_Twin/blob/main/emotional_twin.ipynb"
+          target="_blank" class="btn">Open Notebook</a>
+      </div>
+      <div class="card">
+        <h3>Mental Health Plan Generator</h3>
+        <p>Generates personalized mental health routines using ML + NLP based on user input, behavior, and wellness
+          goals.</p>
+        <a href="https://colab.research.google.com/github/kratika-jadon/MENTAL_HEALTH_PLAN_GENERATOR/blob/main/Mental_Health_Plan_Generator1.ipynb"
+          target="_blank" class="btn">Open Notebook</a>
+      </div>
+      <div class="card">
+        <h3>Mental Health Peer Community</h3>
+        <p>AI-powered peer matching system using NLP and recommendation algorithms to connect users with similar
+          emotional experiences.</p>
+        <a href="https://colab.research.google.com/github/kratika-jadon/MENTAL_HEALTH_PEER_COMMUNITY/blob/main/Mental_Health_Peer_Community.ipynb"
+          target="_blank" class="btn">Open Notebook</a>
+      </div>
+      <div class="card">
+        <h3>Mental Health Chatbot</h3>
+        <p>AI-powered chatbot providing mental health support using NLP and sentiment analysis for personalized
+          responses.</p>
+        <a href="https://colab.research.google.com/github/kratika-jadon/MENTAL_HEALTH_CHATBOT/blob/main/Mental_Health_Chatbot.ipynb"
+          target="_blank" class="btn">Open Notebook</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title animate__animated animate__fadeIn">CONTACT US</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Your Phone Number" required pattern="[0-9]{10}" />
+      <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EnlivenMind AI. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Generate cosmic particles dynamically
+    document.addEventListener('DOMContentLoaded', function () {
+      const cosmicBg = document.querySelector('.cosmic-bg');
+
+      for (let i = 0; i < 30; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('cosmic-particle');
+
+        // Random properties
+        const size = Math.random() * 3 + 1;
+        const posX = Math.random() * 100;
+        const duration = Math.random() * 10 + 5;
+        const delay = Math.random() * 5;
+
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.left = `${posX}%`;
+        particle.style.animationDuration = `${duration}s`;
+        particle.style.animationDelay = `${delay}s`;
+
+        cosmicBg.appendChild(particle);
+      }
+    });
+
+    // Form submission handling
+    const form = document.querySelector('.contact-form');
+    const sendBtn = form.querySelector('button');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      sendBtn.disabled = true;
+      sendBtn.textContent = "Sending...";
+
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData);
+
+      try {
+        const response = await fetch('/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+          showToast("✅ Message sent successfully!");
+          form.reset();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          showToast("❌ Failed to send message.");
+        }
+      } catch (err) {
+        showToast("⚠️ Error occurred. Try again later.");
+      }
+
+      sendBtn.disabled = false;
+      sendBtn.textContent = "Send Message";
+    });
+
+    function showToast(msg) {
+      const toast = document.createElement("div");
+      toast.textContent = msg;
+      toast.style.position = "fixed";
+      toast.style.bottom = "30px";
+      toast.style.left = "50%";
+      toast.style.transform = "translateX(-50%)";
+      toast.style.background = "linear-gradient(135deg, var(--primary), var(--accent))";
+      toast.style.color = "#fff";
+      toast.style.padding = "12px 24px";
+      toast.style.borderRadius = "25px";
+      toast.style.boxShadow = "0 5px 20px rgba(0,0,0,0.3)";
+      toast.style.fontWeight = "bold";
+      toast.style.zIndex = "1000";
+      toast.style.transition = "all 0.3s ease";
+      toast.style.animation = "fadeInUp 0.5s ease-out";
+      document.body.appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.animation = "fadeOutDown 0.5s ease-out";
+        setTimeout(() => document.body.removeChild(toast), 500);
+      }, 3000);
+    }
+  </script>
+</body>
+
+</html>
